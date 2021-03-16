@@ -43,10 +43,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hospitaltitle .name .name-box div h3 {
   font-size: 24px;
+  padding-left: 10px;
 }
 
 .number {
@@ -110,6 +114,19 @@
 .table {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+.table .next-name {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  background: #FF0088;
+  padding: 17px;
+  border-radius: 5px;
+  color: white;
+  top: 50px;
+  left: 50px;
 }
 
 .table .table-title {

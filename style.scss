@@ -31,8 +31,11 @@
                 border-radius: 5px;
                 background: white;
                 display: flex;
+                align-items: center;
+
                 h3 {
                     font-size: 24px;
+                    padding-left: 10px;
                 }
             }
         }
@@ -91,6 +94,18 @@
 .table{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
+    .next-name{
+        position:absolute;
+        width: 50px;
+        height: 120px;
+        background:#FF0088 ;
+        padding: 17px;
+        border-radius: 5px;
+        color: white;
+        top: 50px;
+        left: 50px;
+    }
     .table-title{
         display: flex;
         justify-content: space-around;
@@ -99,6 +114,7 @@
         align-items: center;
         color: white;
         font-size: 30px;
+       
     }
     .table-data{
         .data-box{
