@@ -23,7 +23,7 @@
                     <h5>護理師</h5>
                     <div>
                         <img src="./img/Injection.png" alt="icon">
-                        <h3>楊小妹</h3>
+                        <h3></h3>
                     </div>
                 </div>
             </div>
@@ -46,28 +46,16 @@
             <p>病人姓名</p>
             <p>看診狀態</p>
         </div>
-        <div class="table-data">
-            <div class="data-box">
-                <p>007</p>
-                <p>郭雅年</p>
-                <p>現場掛號</p>
+        <div id="content" class="table-data">
+            <div class="data-box" v-for="d in datas">
+                <p>{{d.id}}</p>
+                <p>{{d.name}}</p>
+                <p>{{d.status}}</p>
             </div>
-            <div class="data-box">
-                <p>007</p>
-                <p>郭雅年</p>
-                <p>現場掛號</p>
-            </div>
-            <div class="data-box">
-                <p>007</p>
-                <p>郭雅年</p>
-                <p>現場掛號</p>
-            </div>
-            <div class="data-box">
-                <p>007</p>
-                <p>郭雅年</p>
-                <p>現場掛號</p>
-            </div>
+            
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
