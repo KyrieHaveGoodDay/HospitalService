@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+}
+
+.hospitaltitle {
+  width: 1200px;
+  margin: 0 auto;
+  background: blue;
+  padding: 20px 10px 5px 10px;
+}
+
+.hospitaltitle h1 {
+  text-align: center;
+  color: white;
+}
+
+.hospitaltitle .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 400px;
+}
+
+.hospitaltitle .name .name-box {
+  width: 200px;
+  margin: 0 10px;
+}
+
+.hospitaltitle .name .name-box h5 {
+  color: white;
+}
+
+.hospitaltitle .name .name-box div {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hospitaltitle .name .name-box div h3 {
+  font-size: 24px;
+}
+
+.number {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+
+.number .prev {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  background: #FF0088;
+  padding: 17px;
+  border-radius: 5px;
+  color: white;
+  top: 100px;
+  left: 40px;
+}
+
+.number .next {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  background: blue;
+  padding: 17px;
+  border-radius: 5px;
+  color: white;
+  top: 100px;
+  right: 40px;
+}
+
+.number .numer-box {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number .numer-box p {
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+}
+
+.table {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.table .table-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #FF0088;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.table .table-data .data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.table .table-data .data-box p {
+  font-weight: bold;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
