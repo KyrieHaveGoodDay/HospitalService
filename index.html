@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,18 @@
     <title>HospitalService</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="title">
-        <div class="hospitaltitle">
-            <h1>婦產科 (五診)</h1>
+
+    <div class="title" id="content">
+        <div class="hospitaltitle" v-for="d in datas">
+            <h1>{{d.科別}}({{d.診別}})</h1>
             <div class="name">
                 <div class="name-box">
                     <h5>醫師</h5>
                     <div>
                         <img src="./img/Stethoscope.png" alt="icon">
-                        <h3>楊富永</h3>
+                        <h3>{{d.醫師名}}</h3>
                     </div>
                 </div>
                 <div class="name-box">
@@ -38,7 +41,7 @@
         </div>
         <div class="numer-box"></div>
     </div>
-    <div class="table">
+    <div class="table" id="data-box">
         <!-- 候診名單定位在這邊 -->
         <div class="next-name">候<br>診<br>名<br>單</div>
         <div class="table-title">
@@ -46,16 +49,17 @@
             <p>病人姓名</p>
             <p>看診狀態</p>
         </div>
-        <div id="content" class="table-data">
-            <div class="data-box" v-for="d in datas">
-                <p>{{d.id}}</p>
-                <p>{{d.name}}</p>
-                <p>{{d.status}}</p>
+        <div class="table-data">
+            <div class="data-box" v-for="d in datas" v-if="d.看診號 <=10">
+                <p>{{d.看診號}}</p>
+                <p>{{d.患者姓名}}</p>
+                <p>{{d.目前狀態}}</p>
             </div>
-            
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
